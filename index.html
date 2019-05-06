@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Electric Salad</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<style>
+		.plant-container {
+			display: flex;
+		}
+
+		.plant {
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.plant-image {
+			max-width: 100px;
+		}
+
+		.plant-moisture {
+			font-weight: 600;
+		}
+
+		.water-droplet {
+			max-width: 20px;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="divided">
+
+		<!-- One -->
+		<section
+			class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+			<div class="content">
+				<h1>Electric Salad</h1>
+				<p class="major">Write an introduction here, about Cubs and the gardening badge you are working on.</p>
+				<div class="plant-container">
+					<div class="plant">
+						<div class="plant">
+							<img class="plant-image" src="images/work/00_strawberry.png" />
+						</div>
+						<div class="plant-moisture">
+							<img class="water-droplet" src="images/work/00_droplet.png" /><span
+								id="strawberry">50%</span>
+						</div>
+					</div>
+					<div class="plant">
+						<div class="plant">
+							<img class="plant-image" src="images/work/00_onion.png" /></div>
+						<div class="plant-moisture">
+							<img class="water-droplet" src="images/work/00_droplet.png" /><span id="onion">50%</span>
+						</div>
+					</div>
+					<div class="plant">
+						<div class="plant">
+							<img class="plant-image" src="images/work/00_coriander.png" /></div>
+						<div class="plant-moisture">
+							<img class="water-droplet" src="images/work/00_droplet.png" /><span
+								id="coriander">50%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="image">
+				<img src="images/banner.jpg" alt="" />
+			</div>
+		</section>
+
+
+		<!-- One Point Five -->
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+			id="first">
+			<div class="content">
+				<h2>Planning the project</h2>
+				<p>Explain how we used tickets on the Trello board to plan our work.</p>
+				<p>Show ho we move the tickets to keep track of our progress.</p>
+			</div>
+			<div class="image">
+				<img src="images/spotlight02.jpg" alt="" />
+			</div>
+		</section>
+
+		<!-- Three -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+			<div class="content">
+				<h2>Wiring the components</h2>
+				<p>Explain that you are using a sensor for each plant as each one might need a different amount of
+					watering.</p>
+				<p>Write here about how you wired up the components so all 3 can be powered from one source.</p>
+				<p>Put links to Amazon so if anyone wants to copy they can get the parts</p>
+			</div>
+			<div class="image">
+				<img src="images/work/01_wiring.png" alt="" />
+			</div>
+		</section>
+
+		<!-- Four -->
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+			<div class="content">
+				<h2>Writing the Arduino code</h2>
+				<p>Explain about the program we wrote.</p>
+				<p>Add a link to the Github code in case anyone wants to copy.</p>
+			</div>
+			<div class="image">
+				<img src="images/spotlight02.jpg" alt="" />
+			</div>
+		</section>
+
+		<!-- Four -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+			<div class="content">
+				<h2>Writing the Python code</h2>
+				<p>Explain about the progra we wrote.</p>
+				<p>Explain how the data gets to this server</p>
+			</div>
+			<div class="image">
+				<img src="images/spotlight02.jpg" alt="" />
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="wrapper style1 align-center">
+			<div class="inner">
+				<ul class="icons">
+					<li><a href="https://twitter.com/electricsalad1" target="_twitter"
+							class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://www.instagram.com/imnorton1/" target="_imsta"
+							class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+				</ul>
+				<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="data.js"></script>
+	<script>
+		document.getElementById('strawberry').innerHTML = `${moisture.strawberry}%`;
+		document.getElementById('onion').innerHTML = `${moisture.onion}%`;
+		document.getElementById('coriander').innerHTML = `${moisture.coriander}%`;
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+const moisture = { "strawberry": 55, "onion": 65, "coriander": 75 };
